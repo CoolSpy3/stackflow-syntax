@@ -1,0 +1,25 @@
+{
+    "name": "stackflow-syntax",
+    "displayName": "StackFlow Syntax",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.67.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "stackflow",
+            "aliases": ["StackFlow", "stackflow"],
+            "extensions": [".sf"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "stackflow",
+            "scopeName": "source.stackflow",
+            "path": "./syntaxes/stackflow.tmLanguage.json"
+        }]
+    }
+}

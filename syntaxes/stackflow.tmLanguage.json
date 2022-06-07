@@ -1,0 +1,88 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "StackFlow",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#numbers"
+		},
+		{
+			"include": "comments"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.stackflow",
+				"match": "\\b(null|true|false|beginF6unc|endFunc|call|jcall|jNew|findClass|findField|findStaticField|findMethod|findConstructor|define|set|val|var|eval|delete|pushCtx|pushRootCtx|popCtx|pushStack|popStack|clearStack|swp|pull|typeOf|string|type|array|len|get|for|while|doWhile|break|continue|return|if|ifElse|tryCatch|tryFinally|tryCatchFinally|throw|assert|load|include|import|class|getMember|evalMember|setMember|public|protected|private|copy|pop|expand|int|add|inc|sub|dec|mult|div|mod|not|bitShift|gt|lt|gteq|lteq|eq|neq|and|or|nand|nor|xor|xnor|neg|abs|pow)\\b"
+			}]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"begin": "\"",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.stackflow"
+						}
+					},
+					"end": "\"",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.stackflow"
+						}
+					},
+					"name": "string.quoted.double.stackflow",
+					"patterns": [
+						{
+							"match": "\\\\.",
+							"name": "constant.character.escape.stackflow"
+						}
+					]
+				},
+				{
+					"begin": "'",
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.begin.stackflow"
+						}
+					},
+					"end": "'",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.string.end.stackflow"
+						}
+					},
+					"name": "string.quoted.single.stackflow",
+					"patterns": [
+						{
+							"match": "\\\\.",
+							"name": "constant.character.escape.stackflow"
+						}
+					]
+				}
+			]
+		},
+		"numbers": {
+			"patterns": [{
+				"match": "[0-9]+(\\.[0-9]+)?",
+				"name": "constant.numeric.decimal.stackflow"
+			}]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"begin": "//",
+					"end": "\\n",
+					"name": "comment.line.double-slash.stackflow"
+				}
+			]
+		}
+	},
+	"scopeName": "source.stackflow"
+}
