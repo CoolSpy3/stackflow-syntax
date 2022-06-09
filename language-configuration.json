@@ -7,22 +7,29 @@
     "brackets": [
         ["beginFunc", "endFunc"],
         ["pushCtx", "popCtx"],
+        ["pushRootCtx", "popCtx"],
         ["pushStack", "popStack"]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
         ["beginFunc", "endFunc"],
+        ["pushCtx", "popCtx"],
+        ["pushRootCtx", "popCtx"],
+        ["pushStack", "popStack"],
         ["\"", "\""],
         ["'", "'"]
     ],
     // symbols that can be used to surround a selection
     "surroundingPairs": [
         ["beginFunc", "endFunc"],
+        ["pushCtx", "popCtx"],
+        ["pushRootCtx", "popCtx"],
+        ["pushStack", "popStack"],
         ["\"", "\""],
         ["'", "'"]
     ],
     "indentationRules": {
-        "increaseIndentPattern": "^\\s+(beginFunc|pushCtx|popCtx)\\s$",
+        "increaseIndentPattern": "^\\s+(beginFunc|pushCtx|pushRootCtx|popCtx)\\s$",
         "decreaseIndentPattern": "^\\s+(endFunc|popCtx|popStack)\\s$"
     }
 }

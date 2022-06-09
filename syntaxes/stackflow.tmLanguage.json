@@ -19,7 +19,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.stackflow",
-				"match": "\\b(null|true|false|beginFunc|endFunc|noop|call|jcall|jNew|findClass|findField|findStaticField|findMethod|findConstructor|define|set|val|var|eval|delete|pushCtx|pushRootCtx|popCtx|pushStack|popStack|clearStack|swp|pull|typeOf|string|type|array|len|get|for|while|doWhile|break|continue|return|if|ifElse|tryCatch|tryFinally|tryCatchFinally|throw|assert|load|include|import|class|getMember|evalMember|setMember|public|protected|private|copy|pop|expand|int|add|inc|sub|dec|mult|div|mod|not|bitShift|gt|lt|gteq|lteq|eq|neq|and|or|nand|nor|xor|xnor|neg|abs|pow)\\b"
+				"match": "\\b(null|true|false|beginFunc|endFunc|noop|call|jcall|jNew|findClass|findField|findStaticField|findMethod|findConstructor|define|set|val|var|eval|delete|pushCtx|pushRootCtx|popCtx|pushStack|popStack|clearStack|swp|pull|typeOf|string|type|array|len|get|for|while|doWhile|break|continue|return|if|ifElse|tryCatch|tryFinally|tryCatchFinally|throw|assert|load|include|import|class|getMember|evalMember|setMember|public|protected|private|copy|pop|expand|int|add|inc|sub|dec|mult|div|mod|not|bitShift|gt|lt|gteq|lteq|eq|neq|and|or|nand|nor|xor|xnor|neg|abs|pow|new|put|logStack|logCtx)\\b"
 			}]
 		},
 		"strings": {
